@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Class Name:</label>
+
+<select name="" id="idClass">
+
+</select>
+
+<select name="" id="idName">
+
+</select>
+
+<!--<p id='idAccount'>-->
+
+<!--</p>-->
+<script>
+
+    accounts = [
+        {id: 1, name: 'tran van a', className: '.net'},
+        {id: 2, name: 'tran van b', className: '.net'},
+        {id: 3, name: 'tran van c', className: 'angular'},
+        {id: 4, name: 'tran van d', className: 'angular'},
+        {id: 5, name: 'tran van e', className: 'java'},
+        {id: 6, name: 'tran van f', className: 'java'},
+        {id: 7, name: 'tran van g', className: 'java'},
+        {id: 8, name: 'tran van h', className: 'test'},
+        {id: 9, name: 'tran van i', className: 'test'},
+        {id: 10, name: 'tran van j', className: 'test'}
+    ];
+
+    const Class = document.getElementById("idClass");
+
+    const Name = document.getElementById("idName");
+
+    // const Account = document.getElementById("idAccount");
+
+    let className = accounts.map(item => item.className);
+
+    className = new Set(className);
+
+    className1();
+
+    function className1() {
+        let option = "";
+        className.forEach(x => {
+            option += '<option>' + x + '</option>'
+        });
+        Class.innerHTML = '<option value="none">Select Class Name</option>' + option;
+    }
+
+
+    Class.addEventListener('change', function () {
+        let nameClass = Class.value;
+        let ArrName = accounts.map(function (account) {
+            if (account.className === nameClass) {
+                return '<option>' + account.name + '</option>'
+            }
+        });
+        Name.innerHTML = '<option>Select Name</option>' + ArrName.toString();
+    });
+
+
+    // Name.addEventListener('change', function () {
+    //     let ClassItem = Class.value;
+    //     let NameItem = Name.value;
+    //     let content = accounts.map(function (x) {
+    //         if (x.className === ClassItem && x.name === NameItem) {
+    //             return 'Id :' + x.id + '<br>Name :' + x.name + '<br>Class Name :' + x.className;
+    //         }
+    //     });
+    //     Account.innerHTML = content.toString();
+    // });
+
+</script>
+</body>
+</html>

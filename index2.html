@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .menu {
+            float: left;
+            width: 200px;
+            text-align: center;
+        }
+
+        .menu a {
+            background-color: #e5e5e5;
+            padding: 8px;
+            margin-top: 7px;
+            display: block;
+            width: 100%;
+            color: black;
+        }
+
+        .main {
+            float: left;
+            width: 73%;
+            align-items: center;
+            padding-left: 34px;
+        }
+
+        .right {
+            background-color: #e5e5e5;
+            width: 200px;
+            padding: 15px;
+            margin-top: 7px;
+            text-align: center;
+            float: right;
+        }
+
+        .main .image-item {
+            width: 24%;
+            float: left;
+        }
+
+        .main .image-item img {
+            width: 100%;
+        }
+
+        .main .image-item {
+            padding-top: 20px;
+        }
+
+        .main .image-item {
+            margin: 2px;
+        }
+
+        .main .image-item .text-left b {
+            font-size: 15px;
+        }
+
+        .main .image-item .text-left span {
+            font-size: 13px;
+        }
+
+        @media only screen and (max-width: 1398px) {
+
+            .main .image-item {
+                width: 24%;
+                float: left;
+            }
+
+            .main{
+                width: 70%;
+            }
+
+        }
+
+        @media only screen and (max-width: 1250px) {
+
+            .main .image-item {
+                width: 32%;
+                float: left;
+            }
+
+            .main{
+                width: 65%;
+            }
+
+        }
+        @media only screen and (max-width: 1097px) {
+
+            .main .image-item {
+                width: 30%;
+                float: left;
+            }
+
+            .main{
+                width: 45%;
+            }
+
+        }
+
+        @media only screen and (max-width: 1123px) {
+            /* For mobile phones: */
+            .menu, .main, .right {
+                width: 100%;
+            }
+
+            .main .image-item {
+                width: 49%;
+            }
+
+            .main {
+                padding-right: 10px;
+            }
+        }
+
+        @media only screen and (max-width: 435px) {
+            .menu, .main, .right {
+                width: 100%;
+            }
+
+            .main .image-item {
+                width: 100%;
+                padding-right: 10px;
+            }
+        }
+    </style>
+</head>
+<body style="font-family:Verdana;color:#aaaaaa;" class="container-fluid">
+
+<div style="background-color:#e5e5e5;padding:15px;text-align:center;">
+    <h1>Hello World</h1>
+</div>
+
+<div style="overflow:auto">
+    <div class="menu">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+    </div>
+
+    <div class="main row">
+        <div class="image-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRTl9NAUbAlhoE4Chf3I4uqh77FavMvDYwTqQ&usqp=CAU"
+                 alt="...">
+            <div class="text-left">
+                <b>Lịch thi đấu tin bóng đá thể thao</b>
+            </div>
+            <div class="text-left overflow-ellipsis" style="color: silver">
+                The GodFootball
+            </div>
+            <div class="text-left" style="color: silver">
+                <span>173k views .</span>
+                <span>14 hours ago</span>
+            </div>
+        </div>
+        <div class="image-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRTl9NAUbAlhoE4Chf3I4uqh77FavMvDYwTqQ&usqp=CAU"
+                 alt="...">
+            <div class="text-left">
+                <b>Lịch thi đấu tin bóng đá thể thao</b>
+            </div>
+            <div class="text-left overflow-ellipsis" style="color: silver">
+                The GodFootball
+            </div>
+            <div class="text-left" style="color: silver">
+                <span>173k views .</span>
+                <span>14 hours ago</span>
+            </div>
+        </div>
+        <div class="image-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRTl9NAUbAlhoE4Chf3I4uqh77FavMvDYwTqQ&usqp=CAU"
+                 alt="...">
+            <div class="text-left">
+                <b>Lịch thi đấu tin bóng đá thể thao</b>
+            </div>
+            <div class="text-left overflow-ellipsis" style="color: silver">
+                The GodFootball
+            </div>
+            <div class="text-left" style="color: silver">
+                <span>173k views .</span>
+                <span>14 hours ago</span>
+            </div>
+        </div>
+        <div class="image-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRTl9NAUbAlhoE4Chf3I4uqh77FavMvDYwTqQ&usqp=CAU"
+                 alt="...">
+            <div class="text-left">
+                <b>Lịch thi đấu tin bóng đá thể thao</b>
+            </div>
+            <div class="text-left overflow-ellipsis" style="color: silver">
+                The GodFootball
+            </div>
+            <div class="text-left" style="color: silver">
+                <span>173k views .</span>
+                <span>14 hours ago</span>
+            </div>
+        </div>
+        <div class="image-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRTl9NAUbAlhoE4Chf3I4uqh77FavMvDYwTqQ&usqp=CAU"
+                 alt="...">
+            <div class="text-left">
+                <b>Lịch thi đấu tin bóng đá thể thao</b>
+            </div>
+            <div class="text-left overflow-ellipsis" style="color: silver">
+                The GodFootball
+            </div>
+            <div class="text-left" style="color: silver">
+                <span>173k views .</span>
+                <span>14 hours ago</span>
+            </div>
+        </div>
+        <div class="image-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRTl9NAUbAlhoE4Chf3I4uqh77FavMvDYwTqQ&usqp=CAU"
+                 alt="...">
+            <div class="text-left">
+                <b>Lịch thi đấu tin bóng đá thể thao</b>
+            </div>
+            <div class="text-left overflow-ellipsis" style="color: silver">
+                The GodFootball
+            </div>
+            <div class="text-left" style="color: silver">
+                <span>173k views .</span>
+                <span>14 hours ago</span>
+            </div>
+        </div>
+        <div class="image-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRTl9NAUbAlhoE4Chf3I4uqh77FavMvDYwTqQ&usqp=CAU"
+                 alt="...">
+            <div class="text-left">
+                <b>Lịch thi đấu tin bóng đá thể thao</b>
+            </div>
+            <div class="text-left overflow-ellipsis" style="color: silver">
+                The GodFootball
+            </div>
+            <div class="text-left" style="color: silver">
+                <span>173k views .</span>
+                <span>14 hours ago</span>
+            </div>
+        </div>
+        <div class="image-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRTl9NAUbAlhoE4Chf3I4uqh77FavMvDYwTqQ&usqp=CAU"
+                 alt="...">
+            <div class="text-left">
+                <b>Lịch thi đấu tin bóng đá thể thao</b>
+            </div>
+            <div class="text-left overflow-ellipsis" style="color: silver">
+                The GodFootball
+            </div>
+            <div class="text-left" style="color: silver">
+                <span>173k views .</span>
+                <span>14 hours ago</span>
+            </div>
+        </div>
+        <div class="image-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRTl9NAUbAlhoE4Chf3I4uqh77FavMvDYwTqQ&usqp=CAU"
+                 alt="...">
+            <div class="text-left">
+                <b>Lịch thi đấu tin bóng đá thể thao</b>
+            </div>
+            <div class="text-left overflow-ellipsis" style="color: silver">
+                The GodFootball
+            </div>
+            <div class="text-left" style="color: silver">
+                <span>173k views .</span>
+                <span>14 hours ago</span>
+            </div>
+        </div>
+        <div class="image-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRTl9NAUbAlhoE4Chf3I4uqh77FavMvDYwTqQ&usqp=CAU"
+                 alt="...">
+            <div class="text-left">
+                <b>Lịch thi đấu tin bóng đá thể thao</b>
+            </div>
+            <div class="text-left overflow-ellipsis" style="color: silver">
+                The GodFootball
+            </div>
+            <div class="text-left" style="color: silver">
+                <span>173k views .</span>
+                <span>14 hours ago</span>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    </div>
+</div>
+
+<div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© copyright w3schools.com</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
